@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accordian.css">
+  <title>CoreCrate</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        CoreCrate
+      </div>
+      <div class="nav">
+        <ul class="nav_elements">
+          <li>Home</li>
+          <li>Create New Project</li>
+          <li>In Progress Projects</li>
+          <li>Completed Projects</li>
+          <li>Retrieve Data</li>
+          <li>Request</li>
+        </ul>
+      </div>
+      <div class="user">
+        <div class="select">
+          <select id="select">
+            <option value="Emilia">Emilia Clarke</option>
+            <option value="John">John Joseph</option>
+          </select>
+        </div>
+        <div class="image_user">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBjah5UcZUsmwsUmZ2ZcOzEEtloBzhqGWxA&usqp=CAU"
+            alt="">
+        </div>
+        <div class="notification">
+          <i class="fas fa-bell "></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="newProject">
+      <h4>Create a New Project</h4>
+    </div>
+
+    <div class="project">
+      <div class="project_form">
+        <label>Project Number</label>
+        <input type="number">
+      </div>
+      <div class="project_form">
+        <label>Counts:</label>
+        <input type="number">
+      </div>
+      <div class="project_form">
+        <label>Deadline</label>
+        <input type="date">
+      </div>
+      <div class="project_form">
+        <label>Priority</label>
+        <select>
+          <option value="high"><i class="fas fa-circle red">High</i></option>
+          <option value="high"><i class="fas fa-circle">Medium</i></option>
+          <option value="high"><i class="fas fa-circle">Low</i></option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="project_details">
+      <div class="project_types">
+        <div class="project_menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="project_search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search here">
+        </div>
+
+      </div>
+      <div class="project_selections">
+        <div class="project_criteria">
+          <div class="criteria_heading">
+            <h5>Criteria:</h5>
+          </div>
+          <div class="criteria_requirement">
+            <p>Fulfillment</p>
+            <p>Refullfillment</p>
+          </div>
+        </div>
+
+        <div class="project_criteria_types">
+          <div class="project_criteria_type">
+            <p>Industry</p>
+          </div>
+        </div>
+      </div>
+      <div class="project_comments">
+        <h5>Comments:</h5>
+        <input type="text" placeholder="Enter comments">
+      </div>
+    </div>
+
+    <div class="industries">
+      <div class="div">
+        <button class="accordion">Industries</button>
+        <div class="accordion-content">
+          <ul id="industry">
+            <li value="Aerospace Industry">
+              Aerospace Industry
+            </li>
+            <li>
+              Transport Industry
+            </li>
+            <li>
+              Computer Industry
+            </li>
+            <li>
+              Aerospace Industry
+            </li>
+            <li>
+              Telecommunication Industry
+            </li>
+            <li>
+              Hospitality Industry
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="industries_classification">
+        <h4>Industries</h4>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
