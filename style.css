@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -27,11 +27,17 @@ ul li {
 }
 
 .container {
-  max-width: 1120px;
-  border: 1px solid #222;
+  max-width: 1400px;
+  width: 100%;
+  /* border: 1px solid #222; */
   background: #f5f6f7;
   margin: 0 auto;
   padding: 0.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
 }
 
 img {
@@ -45,6 +51,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 1.25rem;
 }
 
 .nav_elements {
@@ -54,6 +61,11 @@ img {
 }
 .nav_elements li {
   margin: 0 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav_elements li:hover {
+  transform: scale(1.1);
+  color: rgb(37, 228, 228);
 }
 
 .user {
@@ -79,7 +91,14 @@ option {
   border-bottom: 1px solid #222;
   padding: 0.4rem 0;
 }
+.project_form {
+  padding: 0.8rem 0;
+  font-weight: 400;
+}
 
+.project_form label {
+  font-size: 1.25rem;
+}
 .project_form input {
   padding: 0.4rem;
   border: none;
@@ -106,7 +125,6 @@ select {
 }
 
 .project_details {
-  margin: 1.5rem 0;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   justify-content: center;
@@ -122,6 +140,7 @@ select {
 .project_criteria {
   display: flex;
   justify-content: space-between;
+  border: 0.5px solid #ccc;
 }
 .criteria_requirement p {
   display: block;
@@ -145,23 +164,83 @@ ul li {
   display: flex;
 }
 
-.industries_classification {
+/* Industries */
+.industries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.industries_subclasses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_criteria {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.criteria_details {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid #ccc;
+  padding: 1rem;
+}
+
+.full_refull {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.industry_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 1rem;
+}
+.industry_induvidual {
+  /* margin: 2rem 0; */
+  display: flex;
+}
+.comments input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+  background-color: rgb(236, 234, 234);
+  outline: none;
+}
+.industry_induvidual {
+  /* margin-left: 1rem; */
   margin-top: 0.78rem;
+  margin-bottom: 0.78rem;
   display: flex;
   align-items: center;
-  height: 3em;
 }
-.industries_classification p {
+.industry_induvidual p {
+  text-align: center;
   margin-left: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.5rem;
   border: 0.8px solid #ccc;
   border-radius: 50px;
   font-size: 0.8em;
   width: max-content;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
-.industries_classification p span {
-  font-size: 1.5rem;
+.industry_induvidual p span {
+  font-size: 1.1rem;
   margin-left: 1rem;
 }
+
+.industry_induvidual div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Project Overall */

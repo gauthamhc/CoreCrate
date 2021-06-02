@@ -4,16 +4,13 @@
   margin: 50px auto;
 } */
 
-.industries {
-  max-width: 20%;
-}
 button.accordion {
   width: 100%;
   background-color: whitesmoke;
   border: none;
   outline: none;
   text-align: left;
-  padding: 15px 20px;
+  padding: 15px 2px;
   font-size: 18px;
   color: #444;
   cursor: pointer;

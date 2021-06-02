@@ -1,4 +1,5 @@
 var accordions = document.getElementsByClassName("accordion");
+console.log(accordions.length);
 
 for (var i = 0; i < accordions.length; i++) {
   accordions[i].onclick = function () {
@@ -15,7 +16,18 @@ for (var i = 0; i < accordions.length; i++) {
   };
 }
 
+let industryType = "";
+
 const contents = document.querySelectorAll("#industry li");
+const industrySubclasses = document.querySelectorAll(".industries_subclasses");
+
+industrySubclasses.forEach((industrySubclass) => {
+  industrySubclass.addEventListener("click", () => {
+    industryType = industrySubclass.dataset.industryType;
+    console.log(industryType);
+  });
+});
+
 contents.forEach((content) => {
   content.addEventListener("click", () => {
     const createdIndustry = document.createElement("p");
@@ -24,10 +36,10 @@ contents.forEach((content) => {
     closeIcon.innerHTML = "&times;";
     createdIndustry.append(closeIcon);
     const selectedIndustry = document.querySelector(
-      ".industries_classification"
+      "." + industryType + " div"
     );
     selectedIndustry.append(createdIndustry);
-    createdIndustry.addEventListener("click", () => {
+    closeIcon.addEventListener("click", () => {
       createdIndustry.remove();
     });
   });
